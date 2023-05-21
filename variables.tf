@@ -1,5 +1,5 @@
-variable "access_key"{}
-variable "secret_key"{}
+#variable "access_key"{}
+#variable "secret_key"{}
 variable "cidr"{}
 variable "vpc_name"{}
 variable "subnet_cidr"{}
