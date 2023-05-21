@@ -1,5 +1,5 @@
 provider "aws" {
-  version = "~> 4.0"
+  version = "3.74.0"
   region = "us-east-2"
  # access_key = var.access_key
   #secret_key = var.secret_key
