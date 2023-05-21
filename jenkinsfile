@@ -4,7 +4,7 @@ stage('gitcheckout'){
 git branch: 'master', credentialsId: 'github', url: 'https://github.com/Jyothiganaparthi/terraformprov.git'
 }
 stage('init'){
-sh 'terraform init -reconfigure'
+sh 'terraform init -upgrade -reconfigure'
 }
 stage('plan'){
 sh 'terraform plan --var-file terraform.tfvars -lock=false'
