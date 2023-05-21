@@ -6,9 +6,8 @@ resource "null_resource" "null"{
 
 provisioner "local-exec" {
     
-command =  <<-EOH
-echo"${aws_instance.publicinstance.public_ip}" >> details
-EOH
+command = "echo ${aws_instance.publicinstance.public_ip} >> details.txt"
+
 }
 
 provisioner "remote-exec" {
