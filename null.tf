@@ -6,7 +6,7 @@ resource "null_resource" "null"{
 
 provisioner "local-exec" {
     
-command =  <<EOH
+command =  <<-EOH
 echo"${aws_instance.publicinstance.public_ip}" >> details
 EOH
 }
