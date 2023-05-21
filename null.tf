@@ -20,8 +20,8 @@ inline = [
 connection {
     type = "ssh"
     user = "ubuntu"
-    password = "ubuntu"
-    #private_key = file("Key98.pem")
+    #password = "ubuntu"
+    private_key = file("Key98.pem")
     host = aws_instance.publicinstance.public_ip
     timeout="1m"
 }
