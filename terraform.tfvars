@@ -1,5 +1,5 @@
-access_key ="AKIA2NHV5FNI36DWRI7X"
-secret_key = "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"
+#access_key ="AKIA2NHV5FNI36DWRI7X"
+#secret_key = "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"
 cidr = "10.0.0.0/16"
 vpc_name = "dev-vpc"
 subnet_cidr = "10.0.0.0/24"
