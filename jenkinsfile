@@ -12,8 +12,6 @@ sh 'terraform plan --var-file terraform.tfvars -lock=false'
 stage('apply'){
 sh 'terraform apply --var-file terraform.tfvars --auto-approve -lock=false'
 }
-stage('destroy'){
-sh 'terraform destroy --var-file terraform.tfvars --auto-approve -lock=false'
-}
+
 
 }
